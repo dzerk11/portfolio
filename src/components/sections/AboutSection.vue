@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Separator } from '@/components/ui/separator'
+import { asset } from '@/lib/utils'
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import { Separator } from '@/components/ui/separator'
 
       <div class="flex flex-col gap-10 md:flex-row md:items-start">
         <Avatar class="size-28 shrink-0 md:size-36">
-          <AvatarImage src="/images/avatar.jpg" alt="Davide Zattra" />
+          <AvatarImage :src="asset('images/avatar.jpg')" alt="Davide Zattra" />
           <AvatarFallback class="text-2xl">DZ</AvatarFallback>
         </Avatar>
 

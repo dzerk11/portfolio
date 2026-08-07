@@ -2,6 +2,7 @@
 import { ArrowDown, FileDown } from '@lucide/vue'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { asset } from '@/lib/utils'
 </script>
 
 <template>
@@ -41,7 +42,7 @@ import { Badge } from '@/components/ui/badge'
           </a>
         </Button>
         <Button as-child size="lg" variant="outline">
-          <a href="/cv/Davide_Zattra_CV.pdf" download>
+          <a :href="asset('cv/Davide_Zattra_CV.pdf')" download>
             <FileDown class="size-4" />
             Download CV
           </a>

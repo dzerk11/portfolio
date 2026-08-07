@@ -1,3 +1,5 @@
+import { asset } from '@/lib/utils'
+
 export interface Project {
   title: string
   description: string
@@ -23,15 +25,15 @@ export const projects: Project[] = [
     description:
       'Placeholder description: a published Fortnite island for competitive trio endgame practice — tournament-style point system, team lobbies and custom-built terrain, all scripted in Verse.',
     tags: ['UEFN', 'Verse', 'Game Design'],
-    image: '/images/pro-trio-cup-1.webp',
-    gallery: ['/images/pro-trio-cup-2.webp', '/images/pro-trio-cup-3.webp'],
+    image: asset('images/pro-trio-cup-1.webp'),
+    gallery: [asset('images/pro-trio-cup-2.webp'), asset('images/pro-trio-cup-3.webp')],
   },
   {
     title: 'Industry 4.0 Monitoring Platform',
     description:
       'Placeholder description: fullstack production-monitoring platform connecting industrial machinery to real-time dashboards via Kepware, ThingWorx and InfluxDB.',
     tags: ['ThingWorx', 'Kepware', 'InfluxDB', 'Vue.js', 'Docker'],
-    image: '/images/project-placeholder-2.svg',
+    image: asset('images/project-placeholder-2.svg'),
     link: '#',
   },
 ]

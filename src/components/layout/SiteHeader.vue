@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import { Button } from '@/components/ui/button'
+import { asset } from '@/lib/utils'
 
 const navItems = [
   { label: 'About', href: '#about' },
@@ -48,7 +49,7 @@ onUnmounted(() => {
       </nav>
 
       <Button size="sm" variant="secondary" as-child>
-        <a href="/cv/Davide_Zattra_CV.pdf" download>Download CV</a>
+        <a :href="asset('cv/Davide_Zattra_CV.pdf')" download>Download CV</a>
       </Button>
     </div>
   </header>
