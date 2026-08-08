@@ -14,9 +14,9 @@ import ContactSection from '@/components/sections/ContactSection.vue'
   <main>
     <HeroSection />
     <AboutSection />
-    <SkillsSection />
     <ExperienceSection />
     <ProjectsSection />
+    <SkillsSection />
     <ContactSection />
   </main>
   <SiteFooter />

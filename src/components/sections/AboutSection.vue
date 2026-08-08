@@ -31,10 +31,10 @@ import { asset } from '@/lib/utils'
             Everything ships in Docker through GitLab CI/CD.
           </p>
           <p>
-            Placeholder paragraph 3: before industry, I spent two years building
-            game experiences in Unreal Editor for Fortnite — an experience that
-            taught me rapid iteration, player-focused design, and shipping under
-            deadlines.
+            Placeholder paragraph 3: alongside my industry work, since late 2023
+            I build game experiences in Unreal Editor for Fortnite as a
+            freelancer — work that sharpened rapid iteration, player-focused
+            design, and shipping under deadlines.
           </p>
         </div>
       </div>

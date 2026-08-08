@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ArrowDown } from '@lucide/vue'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { education, experiences } from '@/data/experience'
@@ -10,18 +11,24 @@ import { education, experiences } from '@/data/experience'
       <h2 class="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">Experience</h2>
       <Separator class="mt-4 mb-10" />
 
-      <ol class="relative space-y-12 border-l border-border pl-8">
-        <li v-for="exp in experiences" :key="exp.role" class="relative">
-          <!-- Timeline dot -->
+      <ol>
+        <li
+          v-for="exp in experiences"
+          :key="exp.role + exp.period"
+          class="relative border-l-2 pl-8 pb-12 last:pb-0"
+          :class="exp.current ? 'border-primary' : 'border-border'"
+        >
+          <!-- Timeline dot, centered on the rail color transition -->
+          <span v-if="exp.current" class="absolute -left-[7px] -top-1.5 flex size-3">
+            <span class="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
+            <span class="relative inline-flex size-3 rounded-full border-2 border-background bg-primary" />
+          </span>
           <span
-            class="absolute -left-[2.35rem] top-1.5 size-3 rounded-full border-2 border-background"
-            :class="exp.current ? 'bg-primary' : 'bg-muted-foreground'"
+            v-else
+            class="absolute -left-[7px] -top-1.5 size-3 rounded-full border-2 border-background bg-zinc-600"
           />
 
-          <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
-            <h3 class="text-lg font-medium text-foreground">{{ exp.role }}</h3>
-            <Badge v-if="exp.current" variant="default">Current</Badge>
-          </div>
+          <h3 class="text-lg font-medium text-foreground">{{ exp.role }}</h3>
           <p class="mt-1 text-sm text-muted-foreground">
             {{ exp.company }} · {{ exp.location }} · {{ exp.period }}
           </p>
@@ -35,6 +42,15 @@ import { education, experiences } from '@/data/experience'
           <div class="mt-4 flex flex-wrap gap-2">
             <Badge v-for="tag in exp.tags" :key="tag" variant="outline">{{ tag }}</Badge>
           </div>
+
+          <a
+            v-if="exp.relatedAnchor"
+            :href="exp.relatedAnchor"
+            class="mt-4 inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Related projects
+            <ArrowDown class="size-3.5" />
+          </a>
         </li>
       </ol>
 

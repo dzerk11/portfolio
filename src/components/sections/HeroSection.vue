@@ -26,12 +26,12 @@ import { asset } from '@/lib/utils'
         Davide Zattra
       </h1>
       <p class="mt-4 max-w-2xl text-xl text-muted-foreground sm:text-2xl">
-        Fullstack developer bridging industrial machines and modern software.
+        Full-Stack Developer &amp; Industrial Automation Engineer
       </p>
       <p class="mt-6 max-w-2xl text-muted-foreground">
         Placeholder intro: I design and build Industry 4.0 solutions from
         Vicenza, Italy — from PLC data acquisition to real-time dashboards —
-        with a past life crafting game experiences in UEFN.
+        and craft game experiences in UEFN as a freelancer.
       </p>
 
       <div class="mt-10 flex flex-wrap items-center gap-3">
