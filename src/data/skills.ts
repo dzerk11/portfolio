@@ -6,7 +6,7 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     label: 'Industrial / IoT',
-    skills: ['ThingWorx', 'Kepware', 'Industry 4.0', 'OPC UA'],
+    skills: ['ThingWorx', 'Kepware', 'Industrial IoT', 'OPC UA'],
   },
   {
     label: 'Data & Databases',

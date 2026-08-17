@@ -31,7 +31,9 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
 </script>
 
 <template>
-  <Card class="flex flex-col overflow-hidden bg-card/50">
+  <Card
+    class="flex flex-col overflow-hidden bg-card/50 transition-[border-color,box-shadow] duration-300 hover:border-primary/40 hover:shadow-md"
+  >
     <ShowreelEmbed
       v-if="project.showreelId"
       :video-id="project.showreelId"

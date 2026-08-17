@@ -8,13 +8,16 @@ import { education, experiences } from '@/data/experience'
 <template>
   <section id="experience" class="scroll-mt-14 py-24">
     <div class="mx-auto max-w-5xl px-4 sm:px-6">
-      <h2 class="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">Experience</h2>
-      <Separator class="mt-4 mb-10" />
+      <div v-reveal>
+        <h2 class="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">Experience</h2>
+        <Separator class="mt-4 mb-10" />
+      </div>
 
       <ol>
         <li
           v-for="(exp, i) in experiences"
           :key="exp.role + exp.period"
+          v-reveal="i * 90"
           class="relative pl-8"
           :class="i < experiences.length - 1 ? 'pb-12' : ''"
         >
@@ -58,12 +61,13 @@ import { education, experiences } from '@/data/experience'
         </li>
       </ol>
 
-      <h3 class="mt-16 text-lg font-medium text-foreground">Education &amp; Certifications</h3>
+      <h3 v-reveal class="mt-16 text-lg font-medium text-foreground">Education &amp; Certifications</h3>
       <div class="mt-6 grid gap-4 sm:grid-cols-2">
         <div
-          v-for="edu in education"
+          v-for="(edu, i) in education"
           :key="edu.title"
-          class="rounded-lg border border-border bg-card/50 p-5"
+          v-reveal="i * 70"
+          class="rounded-lg border border-border bg-card/50 p-5 transition-colors duration-300 hover:border-primary/40"
         >
           <p class="font-medium text-foreground">{{ edu.title }}</p>
           <p class="mt-1 text-sm text-muted-foreground">

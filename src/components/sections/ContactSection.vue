@@ -18,13 +18,15 @@ const icons: Record<Social['icon'], Component> = {
 <template>
   <section id="contact" class="scroll-mt-14 py-24">
     <div class="mx-auto max-w-5xl px-4 sm:px-6">
-      <h2 class="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">Contact</h2>
-      <Separator class="mt-4 mb-10" />
+      <div v-reveal>
+        <h2 class="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">Contact</h2>
+        <Separator class="mt-4 mb-10" />
+      </div>
 
-      <div class="flex flex-col items-start gap-8">
+      <div v-reveal="90" class="flex flex-col items-start gap-8">
         <p class="max-w-2xl text-muted-foreground">
-          Placeholder: interested in working together, or want to talk automation,
-          IoT or game development? My inbox is open.
+          I'm open to full-time engineering roles internationally —
+          relocation included.
         </p>
 
         <Button as-child size="lg">

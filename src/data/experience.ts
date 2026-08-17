@@ -46,7 +46,7 @@ export const experiences: Experience[] = [
     period: 'Aug 2021 — Present',
     current: true,
     summary:
-      'Building and running the Industry 4.0 platform that connects production machinery to warehouse logistics and real-time monitoring.',
+      'Building and running the industrial IoT platform that connects production machinery to warehouse logistics and real-time monitoring.',
     highlights: [
       'Integrate industrial automation systems with warehouse logistics.',
       'Build real-time PLC monitoring tools with OPC UA and Python.',
@@ -85,6 +85,6 @@ export const experiences: Experience[] = [
       'Supported machine data acquisition and automation projects.',
       'Worked with PLCs, sensors and industrial protocols.',
     ],
-    tags: ['Industry 4.0', 'PLC', 'OPC UA'],
+    tags: ['Industrial Automation', 'PLC', 'OPC UA'],
   },
 ]
