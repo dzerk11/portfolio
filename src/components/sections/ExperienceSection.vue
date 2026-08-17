@@ -13,21 +13,24 @@ import { education, experiences } from '@/data/experience'
 
       <ol>
         <li
-          v-for="exp in experiences"
+          v-for="(exp, i) in experiences"
           :key="exp.role + exp.period"
-          class="relative border-l-2 pl-8 pb-12 last:pb-0"
-          :class="exp.current ? 'border-primary' : 'border-border'"
+          class="relative pl-8"
+          :class="i < experiences.length - 1 ? 'pb-12' : ''"
         >
-          <!-- Timeline dot, centered on the rail color transition -->
-          <span v-if="exp.current" class="absolute -left-[7px] -top-1.5 flex size-3">
-            <span class="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
-            <span class="relative inline-flex size-3 rounded-full border-2 border-background bg-primary" />
+          <!-- Marker: dot and line share the same absolute x-axis (6px = dot center) -->
+          <span v-if="exp.current" class="absolute left-0 top-2 size-3">
+            <span class="absolute inset-0 animate-ping rounded-full bg-primary/60 motion-reduce:animate-none" />
+            <span class="absolute inset-0 rounded-full bg-primary" />
           </span>
+          <span v-else class="absolute left-0 top-2 size-3 rounded-full bg-zinc-600" />
           <span
-            v-else
-            class="absolute -left-[7px] -top-1.5 size-3 rounded-full border-2 border-background bg-zinc-600"
+            v-if="i < experiences.length - 1"
+            class="absolute left-1.5 top-[26px] bottom-0 w-0.5 -translate-x-1/2 rounded-full"
+            :class="exp.current ? 'bg-primary' : 'bg-border'"
           />
 
+          <div class="min-w-0">
           <h3 class="text-lg font-medium text-foreground">{{ exp.role }}</h3>
           <p class="mt-1 text-sm text-muted-foreground">
             {{ exp.company }} · {{ exp.location }} · {{ exp.period }}
@@ -51,6 +54,7 @@ import { education, experiences } from '@/data/experience'
             Related projects
             <ArrowDown class="size-3.5" />
           </a>
+          </div>
         </li>
       </ol>
 
