@@ -36,4 +36,11 @@ export const projects: Project[] = [
     image: asset('images/project-placeholder-2.svg'),
     link: '#',
   },
+  {
+    title: 'MT5 Trading Analytics Dashboard',
+    description:
+      'Personal project: converted a trading strategy into a custom MQL5 indicator, then built a bot streaming live trade and account data from MetaTrader 5 into Node-RED flows, feeding a real-time Vue.js dashboard shared with a small group of users.',
+    tags: ['MQL5', 'Node-RED', 'Vue.js', 'Node.js'],
+    image: asset('images/trading-dashboard-placeholder.svg'),
+  },
 ]

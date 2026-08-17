@@ -18,23 +18,21 @@ import { asset } from '@/lib/utils'
 
         <div class="space-y-4 text-muted-foreground">
           <p>
-            Placeholder paragraph 1: I'm Davide, a 25-year-old developer from
-            Vicenza, Italy, working at the intersection of industrial automation
-            and modern web technology. My day-to-day involves connecting
-            factory-floor machinery to cloud platforms and building the software
-            that makes sense of the data.
+            I'm a developer who likes understanding how things actually work,
+            from the ground up. My path started in industrial automation, and
+            that hands-on foundation still shapes how I work today: I care about
+            the full picture, not just one layer of a system.
           </p>
           <p>
-            Placeholder paragraph 2: my toolkit spans the full stack — from Kepware
-            and ThingWorx on the industrial side, through PostgreSQL and InfluxDB
-            for data, to Vue.js and Node.js for the interfaces people actually use.
-            Everything ships in Docker through GitLab CI/CD.
+            I'm largely self-taught beyond my technical diploma, and I enjoy
+            picking up new tools and languages when a problem calls for them.
+            That curiosity has taken me from PLCs to full-stack development.
+            Alongside my main role, I've also worked as a freelance developer
+            building game experiences for Fortnite (UEFN).
           </p>
           <p>
-            Placeholder paragraph 3: alongside my industry work, since late 2023
-            I build game experiences in Unreal Editor for Fortnite as a
-            freelancer — work that sharpened rapid iteration, player-focused
-            design, and shipping under deadlines.
+            I'm always looking to grow and take on new challenges, including
+            internationally.
           </p>
         </div>
       </div>

@@ -13,8 +13,8 @@ export const skillGroups: SkillGroup[] = [
     skills: ['PostgreSQL', 'InfluxDB'],
   },
   {
-    label: 'DevOps',
-    skills: ['Docker', 'GitLab CI/CD'],
+    label: 'DevOps & Observability',
+    skills: ['Docker', 'GitLab CI/CD', 'Traefik', 'Grafana', 'Prometheus', 'Loki'],
   },
   {
     label: 'Languages',
