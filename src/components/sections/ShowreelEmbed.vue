@@ -13,7 +13,7 @@ defineProps<{
       :src="`https://www.youtube-nocookie.com/embed/${videoId}`"
       :title="title ?? 'Show reel'"
       frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
       loading="lazy"
