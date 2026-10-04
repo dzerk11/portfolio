@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 conversation-log.txt
+
+# Private job-hunt notes (repo is public)
+career/

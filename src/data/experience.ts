@@ -1,5 +1,7 @@
 export interface Experience {
   role: string
+  /** Title on the contract, shown next to a functional one */
+  officialTitle?: string
   company: string
   location: string
   period: string
@@ -20,15 +22,16 @@ export interface Education {
 
 export const education: Education[] = [
   {
-    title: 'Higher Technical Diploma — Industrial Production Process Digitalization',
+    title: 'Higher Technical Diploma, Industrial Production Process Digitalization',
     school: 'ITS Academy Meccatronico Veneto',
-    period: '2019 — 2021',
+    period: '2019 – 2021',
     note: 'Final grade 100/100',
   },
   {
-    title: 'Technical Diploma — Electronics & Automation',
+    title: 'Technical Diploma, Electronics & Automation',
     school: 'ITT G. Chilesotti',
-    period: '2014 — 2019',
+    period: '2014 – 2019',
+    note: 'Two-time RoboCup Italian national finalist',
   },
   {
     title: 'Cambridge English B2 First',
@@ -40,28 +43,42 @@ export const education: Education[] = [
 
 export const experiences: Experience[] = [
   {
-    role: 'Automation & Digitalization Technician 5.0',
+    role: 'Industrial IoT Software Developer, Platform Lead',
+    officialTitle: 'Automation & Digitalization Technician 5.0',
     company: 'AMER S.p.A.',
     location: 'Valdagno, Italy',
-    period: 'Aug 2021 — Present',
+    period: 'Aug 2021 – Present',
     current: true,
     summary:
-      'Building and running the industrial IoT platform that connects production machinery to warehouse logistics and real-time monitoring.',
+      'Built AMER\'s industrial IoT and integration platform from scratch. Before it, automation ran on a single vendor-installed ThingWorx instance with no version control, containers or CI. Lead developer of the platform, supervising an ML engineer and interns.',
     highlights: [
-      'Integrate industrial automation systems with warehouse logistics.',
-      'Build real-time PLC monitoring tools with OPC UA and Python.',
-      'Run the observability stack: Grafana, Loki, Prometheus, Alloy.',
-      'Set up CI/CD pipelines with GitLab, Docker, and Traefik.',
-      'Develop backend services in ThingWorx, PostgreSQL, Python, and Node.js.',
+      'Introduced Git, GitLab CI/CD, Docker and Traefik with separate test and production environments; the platform now runs ~20 containerized services with automated deploys.',
+      'Built the pallet-routing system of an automated warehouse plant (routing logic in PostgreSQL), in production since January 2026 and moving ~600 pallets a day. Now replacing its ThingWorx screens with a TypeScript/React platform that unifies WMS, warehouse control system, OPC UA and an autonomous mobile robot.',
+      'Integrated ~7 end-of-line motor test benches across two plants with the MES, storing test results for traceability and compliance; thousands of motors are tested every week.',
+      'Connected ~30 production machines to the MES (recipe loaded from the open order, production data logged back) through ThingWorx/Kepware or custom agents in Python, Node.js and C#, including a FANUC FOCAS middleware reused on three CNC lathes.',
+      'Run the observability stack (Grafana, Loki, Prometheus, Alloy) on 10 hosts via Ansible, with 60+ Grafana dashboards and restore-tested backups of production databases.',
     ],
-    tags: ['ThingWorx', 'OPC UA', 'Python', 'PostgreSQL', 'Node.js', 'Grafana', 'GitLab CI/CD', 'Docker', 'Traefik'],
+    tags: [
+      'TypeScript',
+      'Python',
+      'C#',
+      'OPC UA',
+      'ThingWorx',
+      'PostgreSQL',
+      'React',
+      'Docker',
+      'GitLab CI/CD',
+      'Traefik',
+      'Grafana',
+      'Ansible',
+    ],
     relatedAnchor: '#projects',
   },
   {
     role: 'UEFN Developer',
     company: 'Epic Games Fortnite · Freelance',
     location: 'Remote',
-    period: 'Dec 2023 — Mar 2026',
+    period: 'Dec 2023 – Mar 2026',
     current: false,
     summary:
       'Designed and developed game experiences in Unreal Editor for Fortnite as a freelancer alongside my main role.',
@@ -74,10 +91,10 @@ export const experiences: Experience[] = [
     relatedAnchor: '#projects',
   },
   {
-    role: 'Automation & Digitalization Technician — Internship',
+    role: 'Automation & Digitalization Technician (Internship)',
     company: 'AMER S.p.A.',
     location: 'Valdagno, Italy',
-    period: 'Aug 2019 — Aug 2021',
+    period: 'Aug 2019 – Aug 2021',
     current: false,
     summary:
       'Internship in industrial automation, in parallel with the ITS higher technical program.',

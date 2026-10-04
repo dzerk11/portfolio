@@ -5,24 +5,28 @@ export interface SkillGroup {
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: 'Industrial / IoT',
-    skills: ['ThingWorx', 'Kepware', 'Industrial IoT', 'OPC UA'],
+    label: 'Industrial IoT & Integration',
+    skills: ['OPC UA', 'Kepware', 'ThingWorx', 'MES Integration', 'FANUC FOCAS', 'SOAP / REST'],
   },
   {
-    label: 'Data & Databases',
-    skills: ['PostgreSQL', 'InfluxDB'],
+    label: 'Backend',
+    skills: ['Python', 'FastAPI', 'Node.js', 'TypeScript', 'Fastify', 'C#'],
   },
   {
-    label: 'DevOps & Observability',
-    skills: ['Docker', 'GitLab CI/CD', 'Traefik', 'Grafana', 'Prometheus', 'Loki'],
+    label: 'Frontend',
+    skills: ['React', 'Vue.js', 'Vite'],
   },
   {
-    label: 'Languages',
-    skills: ['Python', 'C#', 'JavaScript', 'TypeScript'],
+    label: 'DevOps & Cloud',
+    skills: ['Docker', 'GitLab CI/CD', 'Traefik', 'Ansible', 'Linux', 'AWS (S3, CloudFront)'],
   },
   {
-    label: 'Frontend & Backend',
-    skills: ['Vue.js', 'Node.js'],
+    label: 'Data & Observability',
+    skills: ['PostgreSQL', 'PL/pgSQL', 'InfluxDB', 'Grafana', 'Prometheus', 'Loki'],
+  },
+  {
+    label: 'AI Integration',
+    skills: ['MCP (Model Context Protocol)', 'ONNX Inference', 'AI-Assisted Development (Claude Code)'],
   },
   {
     label: 'Game Development',

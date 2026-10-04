@@ -37,7 +37,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
     <ShowreelEmbed
       v-if="project.showreelId"
       :video-id="project.showreelId"
-      :title="`${project.title} — show reel`"
+      :title="`${project.title}: show reel`"
       class="rounded-none border-0"
     />
     <button
@@ -101,7 +101,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
       >
         <img
           :src="expanded"
-          :alt="`${project.title} — expanded screenshot`"
+          :alt="`${project.title}: expanded screenshot`"
           class="max-h-[90vh] max-w-full rounded-lg object-contain shadow-2xl"
         />
       </div>

@@ -81,14 +81,14 @@ onUnmounted(() => {
     <div ref="contentEl" class="mx-auto w-full max-w-5xl px-4 sm:px-6">
       <div class="mb-6 flex flex-wrap items-center gap-3">
         <Badge variant="secondary">
-          Automation · Industrial IoT · Full-Stack
+          Industrial IoT · Systems Integration · DevOps
         </Badge>
         <span class="inline-flex items-center gap-2 text-sm text-muted-foreground">
           <span class="relative flex size-2">
             <span class="absolute inline-flex size-full animate-ping rounded-full bg-primary/60 motion-reduce:animate-none" />
             <span class="relative inline-flex size-2 rounded-full bg-primary" />
           </span>
-          Open to international opportunities
+          Open to relocation to North America
         </span>
       </div>
 
@@ -96,12 +96,12 @@ onUnmounted(() => {
         Davide Zattra
       </h1>
       <p class="mt-4 max-w-2xl text-xl text-muted-foreground sm:text-2xl">
-        Industrial IoT Platform Engineer &amp; Full-Stack Developer
+        Software Engineer | Industrial IoT &amp; Systems Integration
       </p>
       <p class="mt-6 max-w-2xl text-muted-foreground">
-        I design and build industrial IoT solutions — from PLC data acquisition
-        to real-time dashboards — with a game-development background shipping
-        UEFN experiences for Fortnite.
+        I connect factory floors to the systems that run the business:
+        machine and MES integrations, real-time operator tools, and the
+        containerized infrastructure underneath.
       </p>
 
       <div class="mt-10 flex flex-wrap items-center gap-4">

@@ -38,6 +38,9 @@ import { education, experiences } from '@/data/experience'
           <p class="mt-1 text-sm text-muted-foreground">
             {{ exp.company }} · {{ exp.location }} · {{ exp.period }}
           </p>
+          <p v-if="exp.officialTitle" class="mt-0.5 text-xs text-muted-foreground/80">
+            Official title: {{ exp.officialTitle }}
+          </p>
 
           <p class="mt-4 text-muted-foreground">{{ exp.summary }}</p>
 
