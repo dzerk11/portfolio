@@ -20,22 +20,27 @@ import { asset } from '@/lib/utils'
 
         <div class="space-y-4 text-muted-foreground">
           <p>
-            I'm a developer who likes understanding how things actually work,
-            from the ground up. My path started in industrial automation, and
-            that hands-on foundation still shapes how I work today: I care about
-            the full picture, not just one layer of a system.
+            I came to software from industrial automation, and I like owning
+            systems end to end, from the integration code to the infrastructure
+            it runs on. I spend time on the shop floor learning how operators
+            actually work, then turn what they need into software they trust.
           </p>
           <p>
-            I'm largely self-taught beyond my technical diploma, and I enjoy
-            picking up new tools and languages when a problem calls for them.
-            That curiosity has taken me from PLCs to full-stack development.
-            Alongside my main role, I've also designed and shipped game
-            experiences for Fortnite (UEFN).
+            I joined AMER, an Italian electric-motor manufacturer, as an intern
+            in 2019, when the plant's IoT ran on a single vendor-built server,
+            with no version control, no containers and no pipelines. A couple of years
+            later I rebuilt it from the ground up, and I've led the platform
+            ever since.
           </p>
           <p>
-            I'm always looking to grow and take on new challenges — and I'm
-            currently seeking full-time opportunities abroad, open to
-            relocation.
+            I'm curious by nature and learn most things on the job. Lately I've
+            been focusing on DevOps and AWS, working toward the Solutions
+            Architect certification. Alongside my day job, I've also designed
+            and coded Fortnite islands in UEFN.
+          </p>
+          <p>
+            Now I'm looking for a faster, more ambitious environment, and I'm
+            ready to relocate to North America for the right full-time role.
           </p>
         </div>
       </div>

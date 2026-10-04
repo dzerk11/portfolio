@@ -3,8 +3,7 @@ import { Separator } from '@/components/ui/separator'
 import { projects } from '@/data/projects'
 import ProjectCard from './ProjectCard.vue'
 
-const showreelProject = projects.find((p) => p.showreelId)
-const otherProjects = projects.filter((p) => !p.showreelId)
+const visibleProjects = projects.filter((p) => !p.hidden)
 </script>
 
 <template>
@@ -15,15 +14,13 @@ const otherProjects = projects.filter((p) => !p.showreelId)
         <Separator class="mt-4 mb-10" />
       </div>
 
-      <!-- Featured show reel spans full width -->
-      <ProjectCard v-if="showreelProject" v-reveal :project="showreelProject" class="mb-6" />
-
       <div class="grid gap-6 md:grid-cols-2">
         <ProjectCard
-          v-for="(project, i) in otherProjects"
+          v-for="(project, i) in visibleProjects"
           :key="project.title"
           v-reveal="i * 90"
           :project="project"
+          :class="project.showreelId ? 'md:col-span-2' : ''"
         />
       </div>
     </div>
