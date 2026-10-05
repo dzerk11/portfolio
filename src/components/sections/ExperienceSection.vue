@@ -2,7 +2,9 @@
 import { ArrowDown } from '@lucide/vue'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
-import { education, experiences } from '@/data/experience'
+import { certifications, education, experiences, languages } from '@/data/experience'
+
+const credentials = [...education, ...certifications]
 </script>
 
 <template>
@@ -67,7 +69,7 @@ import { education, experiences } from '@/data/experience'
       <h3 v-reveal class="mt-16 text-lg font-medium text-foreground">Education &amp; Certifications</h3>
       <div class="mt-6 grid gap-4 sm:grid-cols-2">
         <div
-          v-for="(edu, i) in education"
+          v-for="(edu, i) in credentials"
           :key="edu.title"
           v-reveal="i * 70"
           class="rounded-lg border border-border bg-card/50 p-5 transition-colors duration-300 hover:border-primary/40"
@@ -78,6 +80,12 @@ import { education, experiences } from '@/data/experience'
           </p>
         </div>
       </div>
+      <p v-reveal class="mt-6 text-sm text-muted-foreground">
+        <span class="font-medium text-foreground">Languages:</span>
+        <template v-for="(lang, i) in languages" :key="lang.name">
+          {{ i ? ' · ' : ' ' }}{{ lang.name }} ({{ lang.level.toLowerCase() }})
+        </template>
+      </p>
     </div>
   </section>
 </template>
