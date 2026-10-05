@@ -49,7 +49,7 @@ onUnmounted(() => {
       </nav>
 
       <Button size="sm" variant="secondary" as-child>
-        <a :href="asset('cv/Davide_Zattra_CV.pdf')" download>Download CV</a>
+        <a :href="asset('Davide_Zattra_Resume.pdf')" download>Resume</a>
       </Button>
     </div>
   </header>
