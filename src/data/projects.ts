@@ -1,5 +1,3 @@
-import { asset } from '@/lib/utils'
-
 export interface Project {
   title: string
   description: string
@@ -18,26 +16,26 @@ export const projects: Project[] = [
   {
     title: 'Amer Plants: Multi-Plant Integration Platform',
     description:
-      'TypeScript platform unifying AMER\'s automated warehouse plants (WMS, warehouse control system, OPC UA via Kepware, an autonomous mobile robot and the MES) into one real-time operator dashboard, replacing the vendor ThingWorx screens. Cross-checks the systems against known failure patterns to self-correct inventory drift or surface what maintenance needs. Its pallet-routing core has run in production since January 2026 (~600 pallets/day); an MCP server exposes read-only plant diagnostics to an LLM assistant.',
-    tags: ['TypeScript', 'React', 'Fastify', 'PostgreSQL', 'OPC UA', 'MCP', 'Docker'],
+      'TypeScript platform unifying AMER\'s automated warehouse plants (WMS, warehouse control system, OPC UA via Kepware, an autonomous mobile robot and the MES) into one real-time operator dashboard, replacing the vendor ThingWorx screens. Cross-checks the systems against known failure patterns to self-correct inventory drift or surface what maintenance needs. Its pallet-routing core has run in production since January 2026, routing over 600 pallets a day across 53 conveyors; an MCP server exposes read-only plant diagnostics to an LLM assistant.',
+    tags: ['TypeScript', 'Fastify', 'PostgreSQL', 'OPC UA', 'MCP', 'Docker'],
   },
   {
     title: 'Test Bench Integration: Traceability & Quality',
     description:
-      'Integrates ~7 end-of-line test benches for electric motors, across two plants, with the MES: results stored for product traceability and compliance, time series kept for analysis, and an operator UI comparing the running test against historical distributions. Thousands of motors are tested every week.',
+      'Integrates 7 end-of-line test benches for electric motors, across two plants, with the MES: results stored for product traceability and compliance, time series kept for analysis, and an operator UI comparing the running test against historical distributions. Thousands of motors are tested every week.',
     tags: ['Python', 'FastAPI', 'OPC UA', 'Kepware', 'PostgreSQL', 'InfluxDB'],
   },
   {
     title: 'IoT Platform & Observability, Built from Scratch',
     description:
-      'Took the automation department from a single vendor-installed ThingWorx instance to a versioned, containerized platform: GitLab CI/CD with test and production environments, Traefik, ~20 containerized services, a Grafana/Loki/Prometheus/Alloy stack rolled out to 10 hosts with Ansible, and restore-tested backups.',
+      'Took the automation department from a single vendor-installed ThingWorx instance to a versioned, containerized platform: GitLab CI/CD with test and production environments, Traefik, over 50 containers, a Grafana/Loki/Prometheus/Alloy stack rolled out to 10 hosts with Ansible, and restore-tested backups.',
     tags: ['Docker', 'GitLab CI/CD', 'Traefik', 'Ansible', 'Grafana', 'Prometheus', 'Loki'],
   },
   {
     title: 'Machine Connectivity & MES Integration',
     description:
-      'Connects production machines to the MES: the machine loads the item and recipe of the open production order, and processing data is logged back. Done through ThingWorx/Kepware or custom agents, including a C# middleware for FANUC CNC lathes (FOCAS) written once and reused on three machines.',
-    tags: ['ThingWorx', 'Kepware', 'C#', 'FANUC FOCAS', 'MES'],
+      'Connects production machines to the MES, WMS and in-house services: the machine loads the item and recipe of the open production order, and processing data is logged back. Done through ThingWorx/Kepware or custom agents, including a middleware for FANUC CNC lathes (FOCAS) written once and reused on three machines.',
+    tags: ['ThingWorx', 'Kepware', 'FANUC FOCAS', 'MES'],
   },
   {
     title: 'AI Diagnostic Assistant: Infrastructure & Deployment',
@@ -62,13 +60,8 @@ export const projects: Project[] = [
   {
     title: 'UEFN Work: Fortnite Island Design',
     description:
-      'A collection of Fortnite islands and gameplay experiences built in Unreal Editor for Fortnite over two years, including PRO TRIO Cup Endgame, a published island for competitive trio endgame practice, with a tournament-style point system, team lobbies and custom-built terrain, all scripted in Verse.',
+      'A collection of Fortnite islands and gameplay experiences designed and coded in Unreal Editor for Fortnite over two years, with gameplay scripted in Verse.',
     tags: ['UEFN', 'Verse', 'Game Design'],
     showreelId: 'TgDiqtFA-7A',
-    gallery: [
-      asset('images/pro-trio-cup-1.webp'),
-      asset('images/pro-trio-cup-2.webp'),
-      asset('images/pro-trio-cup-3.webp'),
-    ],
   },
 ]

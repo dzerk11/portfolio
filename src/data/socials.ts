@@ -14,7 +14,7 @@ export const socials: Social[] = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/davide-zattra-0227b839b/',
+    href: 'https://www.linkedin.com/in/davidezattra/',
     icon: 'linkedin',
   },
   {
