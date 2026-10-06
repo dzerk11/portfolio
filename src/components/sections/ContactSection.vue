@@ -25,8 +25,7 @@ const icons: Record<Social['icon'], Component> = {
 
       <div v-reveal="90" class="flex flex-col items-start gap-8">
         <p class="max-w-2xl text-muted-foreground">
-          I'm looking for full-time roles in North America and ready to
-          relocate.
+          I'm looking for full-time roles and I'm ready to relocate.
         </p>
 
         <Button as-child size="lg">
