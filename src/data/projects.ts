@@ -16,7 +16,7 @@ export const projects: Project[] = [
   {
     title: 'Amer Plants: Multi-Plant Integration Platform',
     description:
-      'TypeScript platform unifying AMER\'s automated warehouse plants (WMS, warehouse control system, OPC UA via Kepware, an autonomous mobile robot and the MES) into one real-time operator dashboard, replacing the vendor ThingWorx screens. Cross-checks the systems against known failure patterns to self-correct inventory drift or surface what maintenance needs. Its pallet-routing core has run in production since January 2026, routing over 600 pallets a day across 53 conveyors; an MCP server exposes read-only plant diagnostics to an LLM assistant.',
+      'TypeScript platform unifying AMER\'s automated warehouse plants (WMS, warehouse control system, OPC UA via Kepware, an autonomous mobile robot and the MES) into one real-time operator dashboard, replacing the earlier ThingWorx screens. Cross-checks the systems against known failure patterns to self-correct inventory drift or surface what maintenance needs. Its pallet-routing core has run in production since January 2026, routing over 600 pallets a day across 53 conveyors; an MCP server exposes read-only plant diagnostics to an LLM assistant.',
     tags: ['TypeScript', 'Fastify', 'PostgreSQL', 'OPC UA', 'MCP', 'Docker'],
   },
   {
