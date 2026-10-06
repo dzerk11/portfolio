@@ -40,15 +40,25 @@ const credentials = [...education, ...certifications]
           <p class="mt-1 text-sm text-muted-foreground">
             {{ exp.company }} · {{ exp.location }} · {{ exp.period }}
           </p>
-          <p v-if="exp.officialTitle" class="mt-0.5 text-xs text-muted-foreground/80">
-            Official title: {{ exp.officialTitle }}
-          </p>
 
           <p class="mt-4 text-muted-foreground">{{ exp.summary }}</p>
 
-          <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-muted-foreground">
-            <li v-for="h in exp.highlights" :key="h">{{ h }}</li>
+          <ul v-if="exp.highlights.length" class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-muted-foreground">
+            <li v-for="h in exp.highlights" :key="h">
+              <template v-for="(part, j) in h.split('**')" :key="j">
+                <strong v-if="j % 2" class="font-medium text-foreground">{{ part }}</strong>
+                <template v-else>{{ part }}</template>
+              </template>
+            </li>
           </ul>
+
+          <div v-if="exp.previousRole" class="mt-6">
+            <h4 class="font-medium text-foreground">{{ exp.previousRole.role }}</h4>
+            <p class="mt-1 text-sm text-muted-foreground">
+              {{ exp.company }} · {{ exp.previousRole.period }}
+            </p>
+            <p class="mt-2 text-sm text-muted-foreground">{{ exp.previousRole.note }}</p>
+          </div>
 
           <div class="mt-4 flex flex-wrap gap-2">
             <Badge v-for="tag in exp.tags" :key="tag" variant="outline">{{ tag }}</Badge>

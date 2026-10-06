@@ -1,14 +1,14 @@
 export interface Experience {
   role: string
-  /** Title on the contract, shown next to a functional one */
-  officialTitle?: string
   company: string
   location: string
   period: string
   current: boolean
   summary: string
-  /** Keep each to one or two lines */
+  /** Keep each to one or two lines; wrap a key result in **double asterisks** to bold it */
   highlights: string[]
+  /** Earlier role at the same company, listed under the current one */
+  previousRole?: { role: string; period: string; note: string }
   tags: string[]
   /** Anchor of a section showing related work, e.g. '#projects' */
   relatedAnchor?: string
@@ -56,21 +56,24 @@ export const languages: Language[] = [
 
 export const experiences: Experience[] = [
   {
-    role: 'Industrial IoT Software Developer, Platform Lead',
-    officialTitle: 'Automation & Digitalization Technician 5.0',
+    role: 'Software Engineer, Industrial IoT',
     company: 'AMER S.p.A.',
     location: 'Valdagno, Italy',
     period: 'Aug 2021 – Present',
     current: true,
     summary:
-      'Built AMER\'s industrial IoT and integration platform from scratch. Before it, automation ran on a single vendor-installed ThingWorx instance with no version control, containers or CI.',
+      'Decide how machines and production systems share data, develop the integrations, and keep them running.',
     highlights: [
-      'Technical lead of the digitalization team and main developer of the plant\'s integration platform.',
-      'Integrated over 30 production machines with the MES, WMS and in-house services via ThingWorx/Kepware and custom agents (including a FANUC FOCAS middleware), among them 7 end-of-line test benches at two sites that trace thousands of motors a week for compliance.',
-      'Built the pallet-routing system of an automated warehouse (routing logic in PostgreSQL), in production since January 2026 and routing over 600 pallets a day across 53 conveyors, with an MCP server for LLM diagnostics.',
-      'Established the department\'s software delivery from scratch: GitLab CI/CD, Docker and Traefik across separate environments, now running over 50 containers.',
-      'Run the observability stack (Grafana, Prometheus, Loki) on 10 hosts and keep restore-tested backups of production databases.',
+      'Made thousands of motors a week traceable for compliance by connecting **over 30 production machines** to the MES and WMS: each one gets its order and recipe automatically and sends processing data back, while operator dashboards help spot anomalies (ThingWorx, Kepware/OPC UA, custom Docker apps).',
+      'Designed a pallet-routing system for an automated warehouse (600+ pallets a day on 53 conveyors) and the full-stack application around it, which combines data from **about 10 systems** in real time, flags known faults automatically, and gives an operator chatbot access to live plant data (MCP) for support and maintenance.',
+      'Introduced a delivery pipeline: every change is deployed automatically to a test environment and checked before it\'s promoted to production, across **over 50 containers** (GitLab CI/CD, Docker, Traefik).',
+      'Set up monitoring and centralized logs (Grafana, Prometheus, Loki), later also adopted by the IT and BI teams.',
     ],
+    previousRole: {
+      role: 'Automation & Digitalization Technician (Internship)',
+      period: 'Aug 2019 – Aug 2021',
+      note: 'Machine data acquisition and integration.',
+    },
     tags: [
       'TypeScript',
       'Python',
@@ -92,21 +95,9 @@ export const experiences: Experience[] = [
     period: 'Dec 2023 – Mar 2026',
     current: false,
     summary:
-      'Designed and developed game experiences in Unreal Editor for Fortnite as a freelancer alongside my main role.',
-    highlights: [
-      'Designed and coded published Fortnite islands in Verse, alongside my full-time role.',
-    ],
+      'Designed and coded published Fortnite islands in Unreal Editor for Fortnite (Verse), alongside a full-time role.',
+    highlights: [],
     tags: ['UEFN', 'Verse', 'Fortnite', 'Game Design'],
     relatedAnchor: '#projects',
-  },
-  {
-    role: 'Automation & Digitalization Technician (Internship)',
-    company: 'AMER S.p.A.',
-    location: 'Valdagno, Italy',
-    period: 'Aug 2019 – Aug 2021',
-    current: false,
-    summary: 'Internship alongside the ITS higher technical program.',
-    highlights: ['Worked on machine data acquisition and integration projects.'],
-    tags: ['OPC UA', 'Data Acquisition'],
   },
 ]
