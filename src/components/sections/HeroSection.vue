@@ -88,7 +88,7 @@ onUnmounted(() => {
             <span class="absolute inline-flex size-full animate-ping rounded-full bg-primary/60 motion-reduce:animate-none" />
             <span class="relative inline-flex size-2 rounded-full bg-primary" />
           </span>
-          Open to relocation to North America
+          Open to relocation
         </span>
       </div>
 

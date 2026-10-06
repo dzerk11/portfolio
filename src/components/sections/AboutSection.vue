@@ -40,7 +40,7 @@ import { asset } from '@/lib/utils'
           </p>
           <p>
             Now I'm looking for a faster, more ambitious environment, and I'm
-            ready to relocate to North America for the right full-time role.
+            ready to relocate for the right full-time role.
           </p>
         </div>
       </div>
