@@ -4,7 +4,7 @@ export interface Social {
   icon: 'github' | 'linkedin' | 'mail'
 }
 
-export const email = 'dav.zat.00@gmail.com'
+export const email = 'dzattra.00@gmail.com'
 
 export const socials: Social[] = [
   {
