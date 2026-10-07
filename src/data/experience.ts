@@ -62,7 +62,7 @@ export const experiences: Experience[] = [
     period: 'Aug 2021 – Present',
     current: true,
     summary:
-      'Decide how machines and production systems share data, develop the integrations, and keep them running.',
+      'Own how machines and production systems share data, from designing the integrations to developing and running them.',
     highlights: [
       'Made thousands of motors a week traceable for compliance by connecting **over 30 production machines** to the MES and WMS: each one gets its order and recipe automatically and sends processing data back, while operator dashboards help spot anomalies (ThingWorx, Kepware/OPC UA, custom Docker apps).',
       'Designed a pallet-routing system for an automated warehouse (600+ pallets a day on 53 conveyors) and the full-stack application around it, which combines data from **about 10 systems** in real time, flags known faults automatically, and gives an operator chatbot access to live plant data (MCP) for support and maintenance.',
