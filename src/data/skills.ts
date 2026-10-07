@@ -22,7 +22,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: 'AI Integration',
-    skills: ['Claude Code', 'MCP', 'YOLO Object Detection'],
+    skills: ['Claude Code', 'MCP'],
   },
   {
     label: 'Frontend',
