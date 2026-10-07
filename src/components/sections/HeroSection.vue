@@ -96,7 +96,7 @@ onUnmounted(() => {
         Davide Zattra
       </h1>
       <p class="mt-4 max-w-2xl text-xl text-muted-foreground sm:text-2xl">
-        Software Engineer | Industrial IoT &amp; Systems Integration
+        Software Engineer | Industrial IoT, Systems Integration &amp; DevOps
       </p>
       <p class="mt-6 max-w-2xl text-muted-foreground">
         I connect factory floors to the systems that run the business:
