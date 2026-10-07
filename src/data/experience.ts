@@ -89,13 +89,13 @@ export const experiences: Experience[] = [
     relatedAnchor: '#projects',
   },
   {
-    role: 'UEFN Developer',
+    role: 'Game Developer (UEFN)',
     company: 'Freelance',
     location: 'Remote',
     period: 'Dec 2023 – Mar 2026',
     current: false,
     summary:
-      'Designed and coded published Fortnite islands in Unreal Editor for Fortnite (Verse), alongside a full-time role.',
+      'Developed custom game mechanics in Verse for client-commissioned Fortnite projects.',
     highlights: [],
     tags: ['UEFN', 'Verse', 'Fortnite', 'Game Design'],
     relatedAnchor: '#projects',
