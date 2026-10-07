@@ -3,7 +3,6 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import type { Component } from 'vue'
 import { ArrowDown, Mail } from '@lucide/vue'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 import GithubIcon from '@/components/icons/GithubIcon.vue'
 import LinkedinIcon from '@/components/icons/LinkedinIcon.vue'
 import { socials } from '@/data/socials'
@@ -80,9 +79,6 @@ onUnmounted(() => {
 
     <div ref="contentEl" class="mx-auto w-full max-w-5xl px-4 sm:px-6">
       <div class="mb-6 flex flex-wrap items-center gap-3">
-        <Badge variant="secondary">
-          Industrial IoT · Systems Integration · DevOps
-        </Badge>
         <span class="inline-flex items-center gap-2 text-sm text-muted-foreground">
           <span class="relative flex size-2">
             <span class="absolute inline-flex size-full animate-ping rounded-full bg-primary/60 motion-reduce:animate-none" />
