@@ -64,10 +64,10 @@ export const experiences: Experience[] = [
     summary:
       'Own how machines and production systems share data, from designing the integrations to developing and running them.',
     highlights: [
-      'Made thousands of motors a week traceable for compliance by connecting **over 30 production machines** to the MES and WMS: each one gets its order and recipe automatically and sends processing data back, while operator dashboards help spot anomalies (ThingWorx, Kepware/OPC UA, custom Docker apps).',
-      'Designed a pallet-routing system for an automated warehouse (600+ pallets a day on 53 conveyors) and the full-stack application around it, which combines data from **about 10 systems** in real time, flags known faults automatically, and gives an operator chatbot access to live plant data (MCP) for support and maintenance.',
-      'Introduced a delivery pipeline: every change is deployed automatically to a test environment and checked before it\'s promoted to production, across **over 50 containers** (GitLab CI/CD, Docker, Traefik).',
-      'Set up monitoring and centralized logs (Grafana, Prometheus, Loki), later also adopted by the IT and BI teams.',
+      '**Made thousands of motors a week traceable for compliance** by connecting over 30 production machines to the MES and WMS: each one gets its order and recipe automatically and sends processing data back, while operator dashboards help spot anomalies (ThingWorx, Kepware/OPC UA, custom Docker apps).',
+      '**Designed a pallet-routing system** for an automated warehouse (600+ pallets a day on 53 conveyors) and the full-stack application around it, which combines data from about 10 systems in real time, flags known faults automatically, and gives an operator chatbot access to live plant data (MCP) for support and maintenance.',
+      '**Introduced a delivery pipeline**: every change is deployed automatically to a test environment and checked before it\'s promoted to production, across over 50 containers (GitLab CI/CD, Docker, Traefik).',
+      '**Set up monitoring and centralized logs** (Grafana, Prometheus, Loki), later also adopted by the IT and BI teams.',
     ],
     previousRole: {
       role: 'Automation & Digitalization Technician (Internship)',
