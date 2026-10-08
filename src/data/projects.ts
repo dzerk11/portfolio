@@ -6,6 +6,8 @@ export interface Project {
   /** Extra screenshots shown below the description */
   gallery?: string[]
   link?: string
+  /** Text of the link button, defaults to "View project" */
+  linkLabel?: string
   /** YouTube video ID for an embedded show reel */
   showreelId?: string
   /** Kept in the data but not rendered on the site */
@@ -58,10 +60,12 @@ export const projects: Project[] = [
     hidden: true,
   },
   {
-    title: 'UEFN Work: Fortnite Island Design',
+    title: 'Among Us-Style Map for Fortnite',
     description:
-      'A collection of Fortnite islands and gameplay experiences designed and coded in Unreal Editor for Fortnite over two years, with gameplay scripted in Verse.',
+      'An Among Us-style map built in Unreal Editor for Fortnite, with about 15,000 lines of Verse covering tasks, sabotages, emergency meetings and voting. It was built before UEFN supported UI events and advanced customization, so it runs on its own event bus and UI framework.',
     tags: ['UEFN', 'Verse', 'Game Design'],
     showreelId: 'TgDiqtFA-7A',
+    link: 'https://github.com/dzerk11/uefn-impostor-map',
+    linkLabel: 'View code',
   },
 ]
