@@ -16,28 +16,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Amer Plants: Multi-Plant Integration Platform',
+    title: 'Amer Plants: Warehouse Automation Platform',
     description:
-      'TypeScript platform unifying AMER\'s automated warehouse plants (WMS, warehouse control system, OPC UA via Kepware, an autonomous mobile robot and the MES) into one real-time operator dashboard, replacing the earlier ThingWorx screens. Cross-checks the systems against known failure patterns to self-correct inventory drift or surface what maintenance needs. Its pallet-routing core has run in production since January 2026, routing over 600 pallets a day across 53 conveyors; an MCP server exposes read-only plant diagnostics to an LLM assistant.',
-    tags: ['TypeScript', 'Fastify', 'PostgreSQL', 'OPC UA', 'MCP', 'Docker'],
+      'In one of AMER\'s automated warehouses, routes over 600 pallets a day across 53 conveyors, with the routing logic in PostgreSQL so every application gets the same decision. When the earlier ThingWorx screens hit their limits, they were rebuilt as a full-stack application that unifies data from AMER\'s automated warehouses, its mobile robot and the MES, flags known faults automatically, and gives operators a chatbot with live access to that data through an MCP server.',
+    tags: ['PostgreSQL', 'Node.js', 'OPC UA', 'MCP', 'Docker'],
   },
   {
-    title: 'Test Bench Integration: Traceability & Quality',
+    title: 'Machine & Test Bench Integration',
     description:
-      'Integrates 7 end-of-line test benches for electric motors, across two plants, with the MES: results stored for product traceability and compliance, time series kept for analysis, and an operator UI comparing the running test against historical distributions. Thousands of motors are tested every week.',
-    tags: ['Python', 'FastAPI', 'OPC UA', 'Kepware', 'PostgreSQL', 'InfluxDB'],
+      'Connects over 30 production machines to the MES and WMS, so each one gets its order and recipe automatically and sends processing data back. Among them are 7 end-of-line test benches at two plants: their results make thousands of motors a week traceable for compliance, and an operator view compares each running test against past results to spot anomalies.',
+    tags: ['ThingWorx', 'Kepware', 'OPC UA', 'Python', 'PostgreSQL', 'InfluxDB'],
+    hidden: true,
   },
   {
     title: 'IoT Platform & Observability, Built from Scratch',
     description:
-      'Took the automation department from a single vendor-installed ThingWorx instance to a versioned, containerized platform: GitLab CI/CD with test and production environments, Traefik, over 50 containers, a Grafana/Loki/Prometheus/Alloy stack rolled out to 10 hosts with Ansible, and restore-tested backups.',
-    tags: ['Docker', 'GitLab CI/CD', 'Traefik', 'Ansible', 'Grafana', 'Prometheus', 'Loki'],
-  },
-  {
-    title: 'Machine Connectivity & MES Integration',
-    description:
-      'Connects production machines to the MES, WMS and in-house services: the machine loads the item and recipe of the open production order, and processing data is logged back. Done through ThingWorx/Kepware or custom agents, including a middleware for FANUC CNC lathes (FOCAS) written once and reused on three machines.',
-    tags: ['ThingWorx', 'Kepware', 'FANUC FOCAS', 'MES'],
+      'Automation used to run entirely on one vendor-managed ThingWorx server, with no version control, containers or pipelines. Built a containerized platform around it: ThingWorx still interconnects the main machines, while new services go through GitLab CI/CD to a test environment before production, over 50 containers run behind Traefik, and a Grafana, Prometheus and Loki stack monitors the servers. The IT and BI teams later adopted the monitoring too.',
+    tags: ['Docker', 'GitLab CI/CD', 'Traefik', 'Linux', 'Grafana', 'Prometheus', 'Loki'],
+    hidden: true,
   },
   {
     title: 'AI Diagnostic Assistant: Infrastructure & Deployment',
@@ -51,6 +47,7 @@ export const projects: Project[] = [
     description:
       'Built and deployed the backend platform for an industrial object-counting system: a FastAPI service handling authentication, session state and counting events from edge clients, containerized and served through Traefik, with a Vue.js operator frontend.',
     tags: ['FastAPI', 'Python', 'Docker', 'Traefik', 'Vue.js'],
+    hidden: true,
   },
   {
     title: 'MT5 Trading Analytics Dashboard',
