@@ -29,8 +29,8 @@ import { asset } from '@/lib/utils'
             I joined AMER, an Italian electric-motor manufacturer, as an intern
             in 2019, when the plant's IoT ran on a single vendor-built server,
             with no version control, no containers and no pipelines. A couple of years
-            later I took the initiative to build a modern platform around it,
-            and I've led it ever since.
+            later I took the initiative to modernize it, and I've been its
+            technical lead ever since.
           </p>
           <p>
             I'm curious by nature and learn most things on the job. Lately I've

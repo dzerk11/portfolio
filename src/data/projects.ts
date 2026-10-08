@@ -16,7 +16,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Amer Plants: Warehouse Automation Platform',
+    title: 'Amer Plants: Warehouse Operations App',
     description:
       'In one of AMER\'s automated warehouses, routes over 600 pallets a day across 53 conveyors, with the routing logic in PostgreSQL so every application gets the same decision. When the earlier ThingWorx screens hit their limits, they were rebuilt as a full-stack application that unifies data from AMER\'s automated warehouses, its mobile robot and the MES, flags known faults automatically, and gives operators a chatbot with live access to that data through an MCP server.',
     tags: ['PostgreSQL', 'Node.js', 'OPC UA', 'MCP', 'Docker'],
