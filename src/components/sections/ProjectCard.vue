@@ -85,7 +85,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
     <CardFooter v-if="project.link">
       <Button as-child variant="ghost" size="sm">
         <a :href="project.link" target="_blank" rel="noopener noreferrer">
-          View project
+          {{ project.linkLabel ?? 'View project' }}
           <ExternalLink class="size-4" />
         </a>
       </Button>
