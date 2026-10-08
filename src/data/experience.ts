@@ -66,7 +66,7 @@ export const experiences: Experience[] = [
     highlights: [
       '**Made thousands of motors a week traceable for compliance** by connecting over 30 production machines to the MES and WMS: each one gets its order and recipe automatically and sends processing data back, while operator dashboards help spot anomalies (ThingWorx, Kepware/OPC UA, custom Docker apps).',
       '**Designed a pallet-routing system** for an automated warehouse (600+ pallets a day on 53 conveyors) and the full-stack application around it, which unifies warehouse, robot and MES data, flags known faults automatically, and gives an operator chatbot live access to that data (MCP) for support and maintenance.',
-      '**Introduced a delivery pipeline**: every change is deployed automatically to a test environment and checked before it\'s promoted to production, across over 50 containers (GitLab CI/CD, Docker, Traefik).',
+      '**Introduced a delivery pipeline**: every change is deployed automatically to a test environment and checked before it\'s promoted to production, for over 50 containers (GitLab CI/CD, Docker, Traefik).',
       '**Set up monitoring and centralized logs** (Grafana, Prometheus, Loki), later also adopted by the IT and BI teams.',
     ],
     previousRole: {
