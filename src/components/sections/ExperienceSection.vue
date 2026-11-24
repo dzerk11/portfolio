@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ArrowDown } from '@lucide/vue'
+import { ArrowDown, ArrowUpRight } from '@lucide/vue'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { certifications, education, experiences, languages } from '@/data/experience'
+import { asset } from '@/lib/utils'
 
 const credentials = [...education, ...certifications]
 </script>
@@ -82,12 +83,40 @@ const credentials = [...education, ...certifications]
           v-for="(edu, i) in credentials"
           :key="edu.title"
           v-reveal="i * 70"
-          class="rounded-lg border border-border bg-card/50 p-5 transition-colors duration-300 hover:border-primary/40"
+          class="flex items-start gap-4 rounded-lg border border-border bg-card/50 p-5 transition-colors duration-300 hover:border-primary/40"
         >
+          <a
+            v-if="edu.badge"
+            :href="edu.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="shrink-0 transition-transform duration-300 hover:scale-105"
+          >
+            <img
+              :src="asset(edu.badge)"
+              :alt="`${edu.title} badge`"
+              width="80"
+              height="80"
+              loading="lazy"
+              class="size-20"
+            />
+          </a>
+          <div class="min-w-0">
           <p class="font-medium text-foreground">{{ edu.title }}</p>
           <p class="mt-1 text-sm text-muted-foreground">
             {{ edu.school }} · {{ edu.period }}<template v-if="edu.note"> · {{ edu.note }}</template>
           </p>
+          <a
+            v-if="edu.url"
+            :href="edu.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-3 inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Verify credential
+            <ArrowUpRight class="size-3.5" />
+          </a>
+          </div>
         </div>
       </div>
       <p v-reveal class="mt-6 text-sm text-muted-foreground">

@@ -19,6 +19,10 @@ export interface Education {
   school: string
   period: string
   note?: string
+  /** Public verification link, e.g. a Credly badge */
+  url?: string
+  /** Badge image under public/, e.g. 'images/aws-saa-badge.png' */
+  badge?: string
 }
 
 export interface Language {
@@ -45,7 +49,9 @@ export const certifications: Education[] = [
   {
     title: 'AWS Certified Solutions Architect – Associate',
     school: 'Amazon Web Services',
-    period: 'In progress',
+    period: 'Nov 2026',
+    url: 'https://www.credly.com/badges/48d311c2-6aa1-4417-9f3a-8bef847c26c5/public_url',
+    badge: 'images/aws-saa-badge.png',
   },
 ]
 
