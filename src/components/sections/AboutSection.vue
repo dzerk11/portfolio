@@ -34,8 +34,8 @@ import { asset } from '@/lib/utils'
           </p>
           <p>
             I'm curious by nature and learn most things on the job. Lately I've
-            focused on DevOps and Cloud, achieving the AWS Solutions Architect -
-            Associate certification. Alongside my day job, I've also designed
+            been focusing on DevOps and Cloud, achieving the AWS Solutions
+            Architect - Associate certification. Alongside my day job, I've also designed
             and coded Fortnite islands in UEFN.
           </p>
           <p>
