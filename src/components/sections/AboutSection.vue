@@ -33,11 +33,10 @@ import { asset } from '@/lib/utils'
             technical lead ever since.
           </p>
           <p>
-            I'm curious by nature and learn most things on the job. Lately that
-            curiosity has drawn me into DevOps and AWS, and I have the AWS
-            Solutions Architect – Associate certification to show for it.
-            Alongside my day job, I've also designed and coded Fortnite islands
-            in UEFN.
+            I'm curious by nature and learn most things on the job. Lately I've
+            focused on DevOps and cloud architecture, and I hold the AWS
+            Solutions Architect – Associate certification. Alongside my day job,
+            I've also designed and coded Fortnite islands in UEFN.
           </p>
           <p>
             Now I'm looking for a faster, more ambitious environment, and I'm
